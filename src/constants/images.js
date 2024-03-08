@@ -1,7 +1,8 @@
-import logo from "../assests/Logo.svg"
+import Logo from "../assests/Logo.svg";
 
 const images = {
-    logo,
-}
+  Logo,
+};
+
 
 export default images;
