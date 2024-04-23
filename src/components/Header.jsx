@@ -1,8 +1,7 @@
-import React, { useState, } from "react";
-import { images } from "../constants";
-import { IoMenu, IoCloseSharp } from "react-icons/io5";
+import React, { useState } from "react";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { MdKeyboardArrowDown } from "react-icons/md";
-
+import { images } from "../constants";
 const navItemsInfo = [
   { name: "Home", type: "link" },
   { name: "Articles", type: "link" },
@@ -74,12 +73,12 @@ const Header = () => {
         </div>
         <div className="lg:hidden z-50">
           {navIsVisible ? (
-            <IoCloseSharp
+            <AiOutlineClose
               className="w-6 h-6"
               onClick={navVisibilityHandler}
             />
           ) : (
-            <IoMenu className="w-6 h-6" onClick={navVisibilityHandler} />
+            <AiOutlineMenu className="w-6 h-6" onClick={navVisibilityHandler} />
           )}
         </div>
         <div
